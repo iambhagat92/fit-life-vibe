@@ -339,7 +339,8 @@
         <h2 class="text-2xl md:text-3xl font-bold">Healthy Weight Loss Tips & Detox Recipes</h2>
         <div class="grid md:grid-cols-3 gap-6 mt-8">
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+          <div class="relative group cursor-pointer bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+            <a href="#post-smoothies" data-modal-link="true" class="absolute inset-0 z-10" aria-label="Open blog: 5 Fat-Burning Smoothies to Try"></a>
             <img
               src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&q=80&auto=format&fit=crop"
               alt="Green smoothie with leafy greens and fruit"
@@ -353,7 +354,8 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+          <div class="relative group cursor-pointer bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+            <a href="#post-morning" data-modal-link="true" class="absolute inset-0 z-10" aria-label="Open blog: Morning Routine That Boosts Metabolism"></a>
             <img
               src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80&auto=format&fit=crop"
               alt="Morning routine with shoes and water bottle"
@@ -367,7 +369,8 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+          <div class="relative group cursor-pointer bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-soft transition">
+            <a href="#post-keto" data-modal-link="true" class="absolute inset-0 z-10" aria-label="Open blog: Keto Snack Ideas for Busy People"></a>
             <img
               src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&auto=format&fit=crop"
               alt="Low-carb keto snack platter with nuts and vegetables"
@@ -477,6 +480,58 @@
     </div>
   </section>
 
+  <!-- Blog Post Modals -->
+  <div id="post-smoothies" class="hidden fixed inset-0 z-50">
+    <div data-overlay class="absolute inset-0 bg-black/60"></div>
+    <div class="relative mx-auto my-8 w-[min(90%,900px)] max-h-[85vh] overflow-y-auto bg-white rounded-2xl shadow-soft p-6">
+      <button data-close-modal aria-label="Close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl leading-none">×</button>
+      <article>
+        <h2 class="text-2xl md:text-3xl font-bold">5 Fat-Burning Smoothies to Try</h2>
+        <p class="mt-2 text-gray-700">These metabolism-friendly blends support satiety with protein, fiber, and micronutrients—great for Australia, New Zealand, UK, and US readers.</p>
+        <h3 class="mt-6 text-xl font-semibold">Starter Recipe Ideas</h3>
+        <ul class="mt-2 list-disc pl-6 text-gray-700 space-y-1">
+          <li>Green Power: spinach, kiwi, Greek yogurt, chia, water.</li>
+          <li>Berry Protein: mixed berries, whey/isolate, flaxseed, almond milk.</li>
+          <li>Keto Cream: avocado, cocoa, MCT oil, unsweetened milk, ice.</li>
+        </ul>
+        <p class="mt-4 text-gray-700">Tip: Add electrolytes if following a keto smoothie diet. Track calories for realistic results.</p>
+      </article>
+    </div>
+  </div>
+
+  <div id="post-morning" class="hidden fixed inset-0 z-50">
+    <div data-overlay class="absolute inset-0 bg-black/60"></div>
+    <div class="relative mx-auto my-8 w-[min(90%,900px)] max-h-[85vh] overflow-y-auto bg-white rounded-2xl shadow-soft p-6">
+      <button data-close-modal aria-label="Close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl leading-none">×</button>
+      <article>
+        <h2 class="text-2xl md:text-3xl font-bold">Morning Routine That Boosts Metabolism</h2>
+        <p class="mt-2 text-gray-700">Hydrate on waking, get sunlight, and complete 10–15 minutes of movement. A protein-rich breakfast steadies energy and appetite.</p>
+        <h3 class="mt-6 text-xl font-semibold">Quick Checklist</h3>
+        <ul class="mt-2 list-disc pl-6 text-gray-700 space-y-1">
+          <li>500–700 ml water + electrolytes if low-carb.</li>
+          <li>Sunlight or bright light exposure for 5–10 minutes.</li>
+          <li>Micro-workout: bodyweight squats, pushups, brisk walk.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <div id="post-keto" class="hidden fixed inset-0 z-50">
+    <div data-overlay class="absolute inset-0 bg-black/60"></div>
+    <div class="relative mx-auto my-8 w-[min(90%,900px)] max-h-[85vh] overflow-y-auto bg-white rounded-2xl shadow-soft p-6">
+      <button data-close-modal aria-label="Close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl leading-none">×</button>
+      <article>
+        <h2 class="text-2xl md:text-3xl font-bold">Keto Snack Ideas for Busy People</h2>
+        <p class="mt-2 text-gray-700">Portable low-carb snacks help adherence without derailment while traveling in AU, NZ, UK, or US.</p>
+        <ul class="mt-2 list-disc pl-6 text-gray-700 space-y-1">
+          <li>Nuts, cheese sticks, hard‑boiled eggs.</li>
+          <li>Veggie sticks with olive‑oil mayo or guacamole.</li>
+          <li>Jerky (low sugar), tuna pouches.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300">
     <div class="container mx-auto px-4 py-10">
@@ -545,22 +600,60 @@
     ↑
   </button>
 
-  <!-- Smooth Scrolling & Behavior Scripts -->
+  <!-- Smooth Scrolling, Modals & Behavior Scripts -->
   <script>
-    // Smooth scroll for hash links
+    // Smooth scroll for hash links (exclude modal links)
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
-        const targetId = a.getAttribute('href').slice(1);
+        const href = a.getAttribute('href');
+        const targetId = href.slice(1);
         if (!targetId) return;
+        if (a.dataset.modalLink === 'true' || targetId.startsWith('post-')) {
+          // Handled by modal logic below
+          return;
+        }
         const el = document.getElementById(targetId);
         if (el) {
           e.preventDefault();
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          // Update hash without jump
           history.pushState(null, '', '#' + targetId);
         }
       });
     });
+
+    // Modal logic for inline blog posts
+    const modalIds = ['post-smoothies','post-morning','post-keto'];
+    function openModal(id) {
+      const m = document.getElementById(id);
+      if (!m) return;
+      m.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+    function closeModals() {
+      modalIds.forEach(id => document.getElementById(id)?.classList.add('hidden'));
+      document.body.classList.remove('overflow-hidden');
+      if (location.hash && location.hash.startsWith('#post-')) {
+        history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    document.querySelectorAll('a[data-modal-link="true"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        openModal(id);
+        history.pushState(null, '', '#' + id);
+      });
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach(btn => btn.addEventListener('click', closeModals));
+    document.querySelectorAll('[data-overlay]').forEach(ov => ov.addEventListener('click', closeModals));
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModals(); });
+
+    // Open modal if deep-linked
+    if (modalIds.includes(location.hash.slice(1))) {
+      openModal(location.hash.slice(1));
+    }
 
     // Scroll-to-top visibility
     const btn = document.getElementById('scrollTopBtn');
