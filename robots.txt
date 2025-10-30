@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iambhagat92.github.io/fit-life-vibe/sitemap.xml
